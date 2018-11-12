@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="MyScrollerView">
+        <attr name="visibility_height" format="dimension"></attr>
+    </declare-styleable>
+
+</resources>
