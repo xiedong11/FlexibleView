@@ -16,27 +16,27 @@ import android.widget.LinearLayout;
  * author：xiedong
  * data：2018/11/12
  */
-public class MyView extends LinearLayout {
+public class FlexibleView extends LinearLayout {
     private int lastX;
     private int lastY;
     private Button button;
-    private MyView myView;
+    private FlexibleView flexibleView;
 
-    public MyView(Context context) {
+    public FlexibleView(Context context) {
         this(context, null);
     }
 
-    public MyView(Context context, @Nullable AttributeSet attrs) {
+    public FlexibleView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public MyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public FlexibleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        myView = this;
+        flexibleView = this;
         button = new Button(context);
         button.setGravity(Gravity.CENTER);
-        button.setText("fdsa");
-        myView.addView(button);
+        button.setText("拖拽我滑动");
+        flexibleView.addView(button);
         button.setOnTouchListener(new InnerViewOnTouchListener());
     }
 
@@ -69,9 +69,9 @@ public class MyView extends LinearLayout {
 //                        offsetLeftAndRight(offsetX);
 //                        offsetTopAndBottom(offsetY);
 
-                    ViewGroup.LayoutParams layoutParams = myView.getLayoutParams();
+                    ViewGroup.LayoutParams layoutParams = flexibleView.getLayoutParams();
                     layoutParams.height = screenHeight - getTop();
-                    myView.setLayoutParams(layoutParams);
+                    flexibleView.setLayoutParams(layoutParams);
 
                     break;
             }
