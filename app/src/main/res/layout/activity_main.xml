@@ -1,17 +1,24 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="fdsafdasfdsfdsfdsfdasfdsfds发动机防静电快来撒近段时间的司法鉴定所点开链接发的咖啡点开链接司法鉴定拉丝粉接口了的数据可令肌肤的书法家大数据库费考虑到房价康拉伸的荆防颗粒单身快乐的开了房代课老师防静电快来撒防静电快来撒附加费看来都是就恐龙当家付款了的书法家看来都是房价康六点十分代课老师防静电快来撒防静电快来撒交疯狂的流水付款了的设计费卡了的设计费看来都是交疯狂了的深刻理解发大水克劳福德困了就睡防静电快来撒房价康了的设计费看来都是荆防颗粒都是几分考虑到使肌肤的数据库浪费贷款了司法局考虑到双方均看来都是" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fdsafdasfdsfdsfdsfdasfdsfds发动机防静电快来撒近段时间发动机防静电快来撒近段时间发动机防静电快来撒近段时间的司法鉴定所点开链接发的咖啡点开链接司法鉴定拉丝粉接口了的数据可令肌肤的书法家大数据库费考虑到房价康拉伸的荆防颗粒单身快乐的开了房代课老师防静电快来撒防静电快来撒附加费看来都是就恐龙当家付款了的书法家看来都是房价康六点十分代课老师防静电快来撒防静电快来撒交疯狂的流水付款了的设计费卡了的设计费看来都是交疯狂了的深刻理解发大水克劳福德困了就睡防静电快来撒房价康了的设计费看来都是荆防颗粒都是几分考虑到使肌肤的数据库浪费贷款了司法局考虑到双方均看来都是"
+            android:textSize="15sp" />
+    </ScrollView>
 
     <com.zhuandian.flexibleview.FlexibleView
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_alignParentBottom="true"
         android:background="#b9a5b9"
         android:orientation="vertical">
 
@@ -22,4 +29,4 @@
     </com.zhuandian.flexibleview.FlexibleView>
 
 
-</RelativeLayout>
+</LinearLayout>
