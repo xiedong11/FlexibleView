@@ -70,7 +70,8 @@ public class FlexibleView extends LinearLayout {
 //                        offsetTopAndBottom(offsetY);
 
                     ViewGroup.LayoutParams layoutParams = flexibleView.getLayoutParams();
-                    layoutParams.height = screenHeight - getTop();
+//                    layoutParams.height = screenHeight - getTop();
+                    layoutParams.height = screenHeight - (int)(event.getRawY()+0.5); //提高拖拽滑动区域坐标触发位置
                     flexibleView.setLayoutParams(layoutParams);
 
                     break;
